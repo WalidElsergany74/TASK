@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect, useCallback } from "react";
 
 interface CountdownTimerProps {
@@ -6,8 +6,12 @@ interface CountdownTimerProps {
 }
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
+  
+  const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; minutes: number; seconds: number } | null>(null);
+
   const calculateTimeLeft = useCallback(() => {
-    const difference = targetDate.getTime() - new Date().getTime();
+    const now = new Date().getTime();
+    const difference = targetDate.getTime() - now;
 
     if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
@@ -17,17 +21,22 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       minutes: Math.floor((difference / (1000 * 60)) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-  }, [targetDate]); 
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  }, [targetDate]);
 
   useEffect(() => {
+   
+    setTimeLeft(calculateTimeLeft());
+
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
   }, [calculateTimeLeft]);
+
+  if (!timeLeft) {
+    return <div className="text-gray-500">جارٍ التحميل...</div>; 
+  }
 
   return (
     <div className="flex items-center justify-around w-full">
