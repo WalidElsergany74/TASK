@@ -6,8 +6,8 @@ const Card = () => {
     <div className="relative flex flex-col w-full md:flex-row justify-center items-center bg-white md:shadow mx-auto my-5  max-w-md md:max-w-xl rounded-2xl">
       
 
-      <div className="md:hidden absolute left-0 top-1/2 transform  w-6 h-12 bg-[#f1f5f9] rounded-r-full"></div>
-      <div className="md:hidden absolute right-0 top-1/2 transform  w-6 h-12 bg-[#f1f5f9] rounded-l-full"></div>
+      <div className="md:hidden absolute left-0 top-65 transform  w-6 h-12 bg-[#f1f5f9] rounded-r-full"></div>
+      <div className="md:hidden absolute right-0 top-65 transform  w-6 h-12 bg-[#f1f5f9] rounded-l-full"></div>
     
      
       <div className="md:block hidden absolute -top-3 left-60 transform -translate-x-1/2 w-12 h-9.5 bg-[#f1f5f9] rounded-b-full"></div>
