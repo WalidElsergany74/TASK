@@ -3,7 +3,7 @@ import img from "../../public/images/Rectangle 29338.png";
 
 const EventDetails = () => {
   return (
-    <div className="flex gap-7 flex-col w-full md:w-1/2 p-4">
+    <div className="flex gap-7 flex-col w-full p-4">
       <div>
         <h2 className="text-xl font-bold text-[#676767]">تنظيف صحي يعني حياة أفضل</h2>
         <p className="text-base font-medium mt-2 text-[#7E7E7E]">هذا النص هو مثال لنص بديل</p>
@@ -13,7 +13,10 @@ const EventDetails = () => {
         <Image src={img} alt="img..." width={39} height={39} />
         <div className="flex flex-col">
           <p className="text-[#7E7E7E] font-semibold">موقع الورشة</p>
+
           <p className="text-[#7E7E7E]text-sm">يتم عمل الورشة عبر موقع الزوم</p>
+          <p className="text-[#7E7E7E] text-sm">يتم عمل الورشة عبر موقع الزوم</p>
+
         </div>
       </div>
 
