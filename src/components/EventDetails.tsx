@@ -15,7 +15,7 @@ const EventDetails = () => {
           <p className="text-[#7E7E7E] font-semibold">موقع الورشة</p>
 
           <p className="text-[#7E7E7E] text-sm">يتم عمل الورشة عبر موقع الزوم</p>
-          <p className="text-[#7E7E7E] text-sm">يتم عمل الورشة عبر موقع الزوم</p>
+          
 
         </div>
       </div>
