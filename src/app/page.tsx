@@ -3,8 +3,8 @@ import Card from "@/components/Card";
 
 export default function Home() {
   return (
-  <>
- <Card/>
-  </>
+<div className="p-4">
+<Card/>
+</div>
   );
 }
