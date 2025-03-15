@@ -12,14 +12,14 @@ const EventDetails = () => {
       <div className="flex items-center gap-3">
         <Image src={img} alt="img..." width={39} height={39} />
         <div className="flex flex-col">
-          <p className="text-gray-700 font-semibold">موقع الورشة</p>
-          <p className="text-gray-500 text-sm">يتم عمل الورشة عبر موقع الزوم</p>
+          <p className="text-[#7E7E7E] font-semibold">موقع الورشة</p>
+          <p className="text-[#7E7E7E]text-sm">يتم عمل الورشة عبر موقع الزوم</p>
         </div>
       </div>
 
       <div className="mt-4 flex flex-col space-y-1">
-        <p className="text-gray-700 flex items-center">✅ كيفية عمل منزل عرق منزلي</p>
-        <p className="text-gray-700 flex items-center">✅ وصفات طبيعية سهلة وفعالة</p>
+        <p className="text-[#7E7E7E] flex items-center">✅ كيفية عمل منزل عرق منزلي</p>
+        <p className="text-[#7E7E7E] flex items-center">✅ وصفات طبيعية سهلة وفعالة</p>
       </div>
     </div>
   );
